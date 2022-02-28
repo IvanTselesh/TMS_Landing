@@ -1,0 +1,15 @@
+{
+  "name": "course_work_landing",
+  "version": "1.0.0",
+  "description": "Landing site as course work for TMS",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "Ivan Tselesh <vano5964307@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.3.2"
+  }
+}

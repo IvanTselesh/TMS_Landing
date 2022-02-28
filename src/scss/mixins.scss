@@ -1,0 +1,45 @@
+//fonts
+@mixin h1 {
+  font-weight: 900;
+  font-size: $_64px;
+  font-style: normal;
+}
+
+@mixin h2 {
+  font-weight: 700;
+  font-size: $_36px;
+  font-style: normal;
+}
+
+@mixin h3 {
+  font-weight: 700;
+  font-size: $_30px;
+  font-style: normal;
+}
+
+@mixin h4 {
+  font-weight: 900;
+  font-size: $_24px;
+  font-style: normal;
+}
+
+@mixin h5 {
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin h6 {
+  font-weight: 700;
+  font-size: $_13px;
+  font-style: normal;
+}
+
+//effects
+
+@mixin nav_hover {
+  :hover {
+    content:'';
+    border: 3px solid $grey;
+    display: block;
+  }
+}

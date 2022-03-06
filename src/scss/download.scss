@@ -1,0 +1,19 @@
+.download-text {
+  margin: 0 auto 48px;
+  text-align: center;
+
+  &-title {
+    display: block;
+    font-weight: 500;
+    font-size: $_30px;
+    
+  }
+
+  &-subtitle {
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+// format button to center and check paddings because they aren`t exist in any sections

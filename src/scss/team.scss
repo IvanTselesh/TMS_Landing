@@ -1,0 +1,39 @@
+.team-wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.team-wrap-card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 270px;
+  margin-right: 20px;
+
+  span {
+    display: block;
+  }
+}
+
+.team-wrap-card-content-name {
+  font-weight: 700;
+  font-size: $_24px;
+}
+
+.team-wrap-card-content-position {
+  font-weight: 400;
+  color: $red;
+  text-transform: uppercase;
+}
+
+.team-wrap-card-content-icons-list {
+  display: flex;
+  flex-direction: row;
+  margin-top: 38px;
+
+  &-item {
+    margin-right: 5px;
+  }
+}
+
+// add other cards and icons

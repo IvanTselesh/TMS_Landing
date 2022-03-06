@@ -1,5 +1,5 @@
 {
-  "name": "course_work_landing",
+  "name": "landing",
   "version": "1.0.0",
   "description": "Landing site as course work for TMS",
   "source": "src/index.html",
@@ -11,5 +11,14 @@
   "license": "ISC",
   "devDependencies": {
     "parcel": "^2.3.2"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvanTselesh/TMS_Landing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IvanTselesh/TMS_Landing/issues"
+  },
+  "homepage": "https://github.com/IvanTselesh/TMS_Landing#readme"
 }

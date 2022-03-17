@@ -1,5 +1,4 @@
-@import "./variables";
-@import "./mixins";
+@import "./variables.scss";
 
 .header {
   background-image: url('../src/img/header.png');
@@ -35,47 +34,43 @@
   flex-direction: row;
   justify-content: space-between;
 
-  &-logo {
-    color: $logo_grey;
-  }
-
   &-nav-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    margin: 10px 0;
 
     &-item {
       font-size: $_13px;
       text-transform: uppercase;
-      margin-left: 50px;
+      color: $white;
       cursor: pointer;
+      padding: 0 25px;
     }
   }
 }
-  .header-wrap-row-nav-list-item:hover {
-    content:'';
+.header-wrap-row-nav-list-item a:hover {
+  content:'';
     border-bottom: 3px solid $grey;
     display: block;
     transition: 0.2s;
   }
+.header-wrap-content {
+  &-title  {
+    text-align: center;
 
-  .header-wrap-content {
-    &-title  {
-      text-align: center;
-
-      &-item {
-        font-weight: 900;
-        font-style: normal;
-        font-size: $_64px;
-        margin: 130px auto 31px;
-        text-transform: uppercase;
-      }
-    }
-    &-button {
-      width: 370px;
-      margin: 82px auto 0;
+    &-item {
+      font-weight: 900;
+      font-style: normal;
+      font-size: $_64px;
+      margin: 130px auto 31px;
+      text-transform: uppercase;
     }
   }
-
+  &-button {
+    width: 370px;
+    margin: 82px auto 0;
+  }
+}

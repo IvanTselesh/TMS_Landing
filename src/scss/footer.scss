@@ -1,0 +1,53 @@
+.footer {
+    background: $blue;
+    margin-top: 116px;
+}
+
+.footer-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 70px 0;
+}
+
+.footer-wrap-card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: $white;
+    margin: 0 20px;
+
+    &-title {
+        @include h5;
+        font-size: 1rem;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #footer-content {
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+.footer-wrap-card-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &-item {
+        margin-right: 26px;
+    }
+}
+
+.footer-info {
+    width: 370px;
+    margin: auto;
+    color: $footer_grey;
+
+    #footer-subtitle {
+        color: $white;
+    }
+}

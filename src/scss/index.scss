@@ -5,6 +5,9 @@
 @import "./features";
 @import "./team";
 @import "./download.scss";
+@import "./footer.scss";
+@import "./about.scss";
+@import "./portfolio.scss";
 
 
 * {
@@ -16,16 +19,20 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.html {
+html {
   font-size: 18px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 }
 
-.section {
-  padding: 116px 0;
+section {
+  padding: 116px 0 0;
 }
 
 .container {
-  width: 1170px;
+  max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -40,4 +47,5 @@ button {
   height: 78px;
   font-size: $_24px;
   font-weight: 900;
+  cursor: pointer;
 }

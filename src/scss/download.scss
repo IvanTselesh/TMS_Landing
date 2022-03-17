@@ -1,12 +1,16 @@
+.team {
+  padding: 0;
+}
+
 .download-text {
   margin: 0 auto 48px;
   text-align: center;
 
   &-title {
     display: block;
+    margin: 20px;
     font-weight: 500;
     font-size: $_30px;
-    
   }
 
   &-subtitle {
@@ -16,4 +20,7 @@
   }
 }
 
-// format button to center and check paddings because they aren`t exist in any sections
+.download-button {
+  display: flex;
+  justify-content: center;
+}

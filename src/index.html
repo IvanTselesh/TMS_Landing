@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
   <link rel="stylesheet" href="../css/index.css" />
   <title>Document</title>
 </head>
@@ -12,14 +13,27 @@
     <div class="container container__header">
       <div class="header-wrap">
         <div class="header-wrap-row">
-          <span class="header-wrap-row-logo">active</span> <!-- возможен span -->
+          <div class="header-wrap-row-logo">
+            <img src="./img/active.svg" alt="active">
+            <img src="./img/box.svg" alt="box">
+          </div>
           <div class="header-wrap-row-nav">
             <ul class="header-wrap-row-nav-list">
-              <li class="header-wrap-row-nav-list-item">features</li>
-              <li class="header-wrap-row-nav-list-item">works</li>
-              <li class="header-wrap-row-nav-list-item">our team</li>
-              <li class="header-wrap-row-nav-list-item">testimonials</li>
-              <li class="header-wrap-row-nav-list-item">download</li>
+              <li class="header-wrap-row-nav-list-item">
+                <a name="#">features</a>
+              </li>
+              <li class="header-wrap-row-nav-list-item">
+                <a name="#">works</a>
+              </li>
+              <li class="header-wrap-row-nav-list-item">
+                <a name="#">our team</a>
+              </li>
+              <li class="header-wrap-row-nav-list-item">
+                <a name="#">testimonials</a>
+              </li>
+              <li class="header-wrap-row-nav-list-item">
+                <a name="#">download</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -94,6 +108,34 @@
         </div>
       </div>
     </div>
+  </section>
+  <section class="portfolio">
+      <div class="portfolio-wrap">
+        <div class="portfolio-wrap-item portfolio-wrap-item_1">
+          <img src="./img/portfolio-1.jpg" alt="1">
+        </div>
+        <div class="portfolio-wrap-item portfolio-wrap-item_2">
+          <img src="./img/portfolio-2.jpg" alt="2">
+        </div>
+        <div class="portfolio-wrap-item portfolio-wrap-item_3">
+          <img src="./img/portfolio-3.jpg" alt="3">
+        </div>
+        <div class="portfolio-wrap-item portfolio-wrap-item_4">
+          <img src="./img/portfolio-4.jpg" alt="4">
+        </div>
+        <div class="portfolio-wrap-item portfolio-wrap-item_5">
+          <img src="./img/portfolio-5.jpg" alt="5">
+        </div>
+        <div class="portfolio-wrap-item portfolio-wrap-item_6">
+          <img src="./img/portfolio-6.jpg" alt="6">
+        </div>
+        <div class="portfolio-wrap-item portfolio-wrap-item_7">
+          <img src="./img/portfolio-7.jpg" alt="7">
+        </div>
+        <div class="portfolio-wrap-item portfolio-wrap-item_8">
+          <img src="./img/portfolio-8.jpg" alt="8">
+        </div>
+      </div>
   </section>
   <section class="team">
     <div class="container">
@@ -217,6 +259,47 @@
       </div>
     </div>
   </section>
+  <section class="about">
+    <div class="container">
+      <div class="slider">
+        <div class="slider-item">
+          <img src="./img/slider-1.png">
+          <div class="slider-item-content">
+            <p>“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
+            <span>Susan Sims, Interaction Designer at XYZ</span>
+          </div>
+        </div>
+        <div class="slider-item">
+          <img src="./img/slider-2.jpg">
+          <div class="slider-item-content">
+            <p>“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
+            <span>Susan Sims, Interaction Designer at XYZ</span>
+          </div>
+        </div>
+        <div class="slider-item">
+          <img src="./img/slider-3.jpg">
+          <div class="slider-item-content">
+            <p>“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
+            <span>Susan Sims, Interaction Designer at XYZ</span>
+          </div>
+        </div>
+        <div class="slider-item">
+          <img src="./img/slider-4.jpg">
+          <div class="slider-item-content">
+            <p>“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
+            <span>Susan Sims, Interaction Designer at XYZ</span>
+          </div>
+        </div>
+        <div class="slider-item">
+          <img src="./img/slider-5.jpg">
+          <div class="slider-item-content">
+            <p>“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
+            <span>Susan Sims, Interaction Designer at XYZ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="download">
     <div class="container">
       <div class="download-text">
@@ -228,7 +311,49 @@
       </div>
     </div>
   </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrap">
+        <div class="footer-wrap-card">
+          <h3 class="footer-wrap-card-title">location</h3>
+          <p>3481 Melrose Place
+            Beverly Hills, CA 90210</p>
+        </div>
+        <div class="footer-wrap-card">
+          <h3 class="footer-wrap-card-title">share with love</h3>
+          <ul class="footer-wrap-card-list">
+            <li class="footer-wrap-card-list-item">
+              <a href="https://www.facebook.com/">
+                <img src="./img/facebook_icon.svg" alt="facebook">
+              </a>
+            </li>
+            <li class="footer-wrap-card-list-item">
+              <a href="https://twitter.com/?lang=ru">
+                <img src="./img/twitter_icon.svg" alt="twitter">
+              </a>
+            </li>
+            <li class="footer-wrap-card-list-item">
+              <a href="https://www.linkedin.com/login">
+                <img src="./img/linkedin_icon.svg" alt="linkedin">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-wrap-card">
+          <h3 class="footer-wrap-card-title">about activebox</h3>
+          <p id="footer-content">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        </div>
+      </div>
+      <div class="footer-info">
+        <span>Copyright © 2015 ActiveBox. All Rights Reserved
+          Made with </span>
+          <span id="footer-subtitle">by Kamal Chaneman</span>
+      </div>
+    </div>
+  </footer>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./js/slick.min.js"></script>
   <script type="module" src="./js/index.js"></script>
 </body>
 </html>

@@ -1,3 +1,7 @@
+.about {
+  padding: 0;
+}
+
 /* Слайдер */
 .slick-slider{}
 /* Слайдер запущен */
@@ -81,7 +85,10 @@
 
 .slider-item {
   display: flex;
-  width: 50%;
   transition: 0.3s;
+
+  & img {
+    width: 50%;
+  }
 }
 

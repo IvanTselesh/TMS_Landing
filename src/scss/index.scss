@@ -48,4 +48,16 @@ button {
   font-size: $_24px;
   font-weight: 900;
   cursor: pointer;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+
+  &:hover {
+    background: $red_btn;
+  }
+
+  &:active {
+    box-shadow: 0 0 20px $red;
+    background: $red;
+  }
 }

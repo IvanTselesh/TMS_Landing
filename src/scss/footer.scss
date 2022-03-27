@@ -1,13 +1,12 @@
 .footer {
     background: $blue;
-    margin-top: 116px;
+    padding: 70px 0 20px;
 }
 
 .footer-wrap {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    padding: 70px 0;
 }
 
 .footer-wrap-card {
@@ -16,7 +15,7 @@
     flex-direction: column;
     text-align: center;
     color: $white;
-    margin: 0 20px;
+    margin: 20px 0;
 
     &-title {
         @include h5;
@@ -38,7 +37,13 @@
     justify-content: center;
 
     &-item {
-        margin-right: 26px;
+        text-align: center;
+        align-items: center;
+        margin: 0 13px;
+
+        & a img:hover {
+            box-shadow: 0 0 6px $red;
+        }
     }
 }
 

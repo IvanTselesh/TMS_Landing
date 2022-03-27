@@ -17,23 +17,14 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  &:hover {
-    z-index: 2;
-    background-color: aquamarine;
-  }
 }
 
 .portfolio-wrap-item {
   height: 340px;
-  position: relative;
   cursor: pointer;
 
-  &:hover {
-    background-color: aqua;
+  & img:active {
+    background-color: $red;
   }
 }
 

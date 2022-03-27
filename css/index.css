@@ -41,6 +41,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .header-wrap-row-nav-list {
   display: -webkit-box;
@@ -57,7 +60,6 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin: 10px 0;
 }
 .header-wrap-row-nav-list-item {
   font-size: 0.722rem;
@@ -65,6 +67,9 @@
   color: white;
   cursor: pointer;
   padding: 0 25px;
+}
+.header-wrap-row-nav-list-item a {
+  border-bottom: 3px solid none;
 }
 
 .header-wrap-row-nav-list-item a:hover {
@@ -75,6 +80,12 @@
   transition: 0.2s;
 }
 
+.header-wrap-content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
 .header-wrap-content-title {
   text-align: center;
 }
@@ -88,6 +99,10 @@
 .header-wrap-content-button {
   width: 370px;
   margin: 82px auto 0;
+}
+
+.header-wrap-content-button {
+  margin-top: 80px;
 }
 
 .features {
@@ -139,17 +154,19 @@
   margin-bottom: 20px;
 }
 
+.team {
+  padding: 0 0 116px;
+}
+
 .team-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-flex: row wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 -15px;
 }
 
 .team-wrap-card {
@@ -162,10 +179,22 @@
           flex-direction: column;
   text-align: left;
   width: 250px;
-  margin-right: 20px;
+  margin: 0 15px;
 }
 .team-wrap-card-foto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 30px;
+}
+.team-wrap-card-foto img {
+  width: 100%;
 }
 .team-wrap-card span {
   display: block;
@@ -174,13 +203,14 @@
 .team-wrap-card-content-name {
   font-weight: 700;
   font-size: 1.333rem;
+  margin-bottom: 6px;
 }
 
 .team-wrap-card-content-position {
   font-weight: 400;
   color: #ff4343;
   text-transform: uppercase;
-  margin: 6px 0 18px;
+  margin-bottom: 18px;
 }
 
 .team-wrap-card-content-icons-list {
@@ -196,9 +226,13 @@
 .team-wrap-card-content-icons-list-item {
   margin-right: 5px;
 }
+.team-wrap-card-content-icons-list-item-link img:hover {
+  -webkit-box-shadow: 0 0 6px #ff4343;
+          box-shadow: 0 0 6px #ff4343;
+}
 
-.team {
-  padding: 0;
+.download {
+  padding: 116px 0;
 }
 
 .download-text {
@@ -228,7 +262,7 @@
 
 .footer {
   background: #363d66;
-  margin-top: 116px;
+  padding: 70px 0 20px;
 }
 
 .footer-wrap {
@@ -242,7 +276,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 70px 0;
 }
 
 .footer-wrap-card {
@@ -256,7 +289,7 @@
           flex-direction: column;
   text-align: center;
   color: white;
-  margin: 0 20px;
+  margin: 20px 0;
 }
 .footer-wrap-card-title {
   font-weight: 400;
@@ -285,7 +318,15 @@
           justify-content: center;
 }
 .footer-wrap-card-list-item {
-  margin-right: 26px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 13px;
+}
+.footer-wrap-card-list-item a img:hover {
+  -webkit-box-shadow: 0 0 6px #ff4343;
+          box-shadow: 0 0 6px #ff4343;
 }
 
 .footer-info {
@@ -295,6 +336,10 @@
 }
 .footer-info #footer-subtitle {
   color: white;
+}
+
+.about {
+  padding: 0;
 }
 
 /* Слайдер */
@@ -391,9 +436,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+.slider-item img {
+  width: 50%;
 }
 
 .portfolio {
@@ -459,22 +506,14 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.portfolio-wrap-item img:hover {
-  z-index: 2;
-  background-color: aquamarine;
 }
 
 .portfolio-wrap-item {
   height: 340px;
-  position: relative;
   cursor: pointer;
 }
-.portfolio-wrap-item:hover {
-  background-color: aqua;
+.portfolio-wrap-item img:active {
+  background-color: #ff4343;
 }
 
 * {
@@ -517,4 +556,17 @@ button {
   font-size: 1.333rem;
   font-weight: 900;
   cursor: pointer;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+button:hover {
+  background: #E71414;
+}
+button:active {
+  -webkit-box-shadow: 0 0 20px #ff4343;
+          box-shadow: 0 0 20px #ff4343;
+  background: #ff4343;
 }

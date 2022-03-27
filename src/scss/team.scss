@@ -1,7 +1,12 @@
+.team {
+  padding: 0 0 116px;
+}
+
 .team-wrap {
   display: flex;
-  flex-direction: row;
+  flex-flex: row wrap;
   justify-content: space-between;
+  margin: 0 -15px;
 }
 
 .team-wrap-card {
@@ -9,10 +14,17 @@
   flex-direction: column;
   text-align: left;
   width: 250px;
-  margin-right: 20px;
+  margin: 0 15px;
 
   &-foto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
+
+    & img {
+      width: 100%;
+    }
   }
 
   span {
@@ -23,13 +35,14 @@
 .team-wrap-card-content-name {
   font-weight: 700;
   font-size: $_24px;
+  margin-bottom: 6px;
 }
 
 .team-wrap-card-content-position {
   font-weight: 400;
   color: $red;
   text-transform: uppercase;
-  margin: 6px 0 18px;
+  margin-bottom: 18px;
 }
 
 .team-wrap-card-content-icons-list {
@@ -39,6 +52,10 @@
 
   &-item {
     margin-right: 5px;
+
+    &-link img:hover {
+      box-shadow: 0 0 6px $red;
+    }
   }
 }
 

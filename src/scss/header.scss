@@ -1,5 +1,4 @@
-@import "./variables";
-@import "./mixins";
+@import "./variables.scss";
 
 .header {
   background-image: url('../src/img/header.png');
@@ -22,60 +21,66 @@
   z-index: 1;
 } 
 
-.container {
+.container__header {
   color: $white;
   position: relative;
   z-index: 5;
+}
 
-  .header-wrap-row {
-    border-bottom: 1px solid $grey;
+.header-wrap-row {
+  border-bottom: 1px solid $grey;
+  display: flex;
+  padding: 30px 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &-nav-list {
     display: flex;
-    padding: 30px 0;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    text-align: center;
 
-    &-logo {
-      color: $logo_grey;
-    }
-
-    &-nav-list {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      text-align: center;
-
-      &-item {
-        font-size: $_13px;
-        text-transform: uppercase;
-        margin-left: 50px;
-        cursor: pointer;
+    &-item {
+      font-size: $_13px;
+      text-transform: uppercase;
+      color: $white;
+      cursor: pointer;
+      padding: 0 25px;
+      
+      & a {
+        border-bottom: 3px solid none;
       }
     }
   }
-
-  .header-wrap-row-nav-list-item:hover {
-    content:'';
+}
+.header-wrap-row-nav-list-item a:hover {
+  content:'';
     border-bottom: 3px solid $grey;
     display: block;
     transition: 0.2s;
   }
+.header-wrap-content {
+  align-items: center;
+  text-align: center;
+  &-title  {
+    text-align: center;
 
-  .header-wrap-content {
-    &-title  {
-      text-align: center;
-
-      &-item {
-        font-weight: 900;
-        font-style: normal;
-        font-size: $_64px;
-        margin: 130px auto 31px;
-        text-transform: uppercase;
-      }
-    }
-    &-button {
-      width: 370px;
-      margin: 82px auto 0;
+    &-item {
+      font-weight: 900;
+      font-style: normal;
+      font-size: $_64px;
+      margin: 130px auto 31px;
+      text-transform: uppercase;
     }
   }
+  &-button {
+    width: 370px;
+    margin: 82px auto 0;
+  }
+}
+
+.header-wrap-content-button {
+  margin-top: 80px;
 }

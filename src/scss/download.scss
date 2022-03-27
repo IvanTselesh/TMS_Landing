@@ -1,0 +1,26 @@
+.download {
+  padding: 116px 0;
+}
+
+.download-text {
+  margin: 0 auto 48px;
+  text-align: center;
+
+  &-title {
+    display: block;
+    margin: 20px;
+    font-weight: 500;
+    font-size: $_30px;
+  }
+
+  &-subtitle {
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.download-button {
+  display: flex;
+  justify-content: center;
+}
